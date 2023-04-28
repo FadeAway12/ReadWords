@@ -144,7 +144,39 @@ int main() {
 	
 	C6.exclude({ "corazon" });
 
-	vector<Word> words = C1.getWords() + C2.getWords() + C3.getWords() + C4.getWords() + C5.getWords() + C6.getWords();
+	bookStream C7("Text.txt", 113, 129, { "astuto", "broma", "comenzar", "comienz", "comenz", "comence", "fantasma", "justo", "leal", "lugar", "oir",
+			"oig", "oye", "oi", "pasillo", "piso", "prueba", "sabiduria", "seguir", "sig", "seg", "techo", "valiente"});
+
+	bookStream C8("Text.txt", 129, 140, { "aguja", "algun", "aun", "astrado", "calabozo", "cerilla", "deberes", "despues", "equivo", "tampoco", "turbante",
+			"vaciado", "ya"});
+
+	bookStream C9("Text.txt", 140, 157, { "bola", "buscador", "modos", "duelo", 
+		"engan", 
+		"escondido", "medianoche", "entonc", "escoba", "suelo", 
+		"meto", "mete", "meti", "meta",
+			"olvid",
+		"recuerd", "record"});
+
+	bookStream C10("Text.txt", 157, 172, 
+		
+		{ 
+		"busc", "busqu",
+		"campo", 
+		"compart",
+		"nieg", "niequ", "nega",
+		"paquete",
+		"peligroso",
+		"pluma",
+		"supuesto",
+		"vez",
+		"tengo", "tenemos", "teneis", "tenga", "tened", "teniend", "tien",
+		"tira", "tire",
+		"todavia",
+		"valisoso", "valioso"
+		});
+
+	vector<Word> words = C1.getWords() + C2.getWords() + C3.getWords() + C4.getWords() + C5.getWords() + 
+		C6.getWords() + C7.getWords() + C8.getWords() + C9.getWords() + C10.getWords();
 
 	ofstream os{ "Text1.txt" };
 
